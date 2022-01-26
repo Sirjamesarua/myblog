@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'App\Http\Controllers\Pagescontroller@index');
+Route::resource('posts','App\Http\Controllers\PostsController');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/logout',function(){
+	Auth::logout();
+	Return Redirect::to('login');
 });
+
+Route::resource('admin','App\Http\Controllers\HomeController');
