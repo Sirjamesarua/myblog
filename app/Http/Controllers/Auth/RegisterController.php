@@ -23,6 +23,7 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
+        return redirect('/home')
 
     /**
      * Where to redirect users after registration.
