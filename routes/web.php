@@ -25,3 +25,6 @@ Route::get('/logout',function(){
 });
 
 Route::resource('admin','App\Http\Controllers\HomeController');
+Route::get('/register',function(){
+	Return Redirect::to('login');
+});
