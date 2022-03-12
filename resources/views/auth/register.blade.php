@@ -83,5 +83,4 @@
         </div>
     </div>
 </div>-->
-<center>YOU ARE NOT ALLOWED</center>
 @endsection
