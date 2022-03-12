@@ -28,7 +28,6 @@
 
                 <div style="">
                     <div class="border-center">
-                     {!! $posts->links('vendor.pagination.simple-bootstrap-4')!!}
                     </div>
                 </div>
 
