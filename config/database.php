@@ -45,18 +45,18 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'url' => env('DATABASE_URL','mysql://bdf8f5fe3c49b7:8918aa91@us-cdbr-east-05.cleardb.net/heroku_bac2365c185cfb3?reconnect=true'),
+            'host' => env('DB_HOST', 'us-cdbr-east-05.cleardb.net'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env('DB_DATABASE', 'heroku_bac2365c185cfb3'),
+            'username' => env('DB_USERNAME', 'bdf8f5fe3c49b7'),
+            'password' => env('DB_PASSWORD', '8918aa91'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'prefix_indexes' => true,
-            'strict' => false,
+            'strict' => true,
             'engine' => null,
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
@@ -91,7 +91,7 @@ return [
             'prefix_indexes' => true,
         ],
 
-    ],
+    ],  
 
     /*
     |--------------------------------------------------------------------------
