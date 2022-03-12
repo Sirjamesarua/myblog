@@ -61,7 +61,7 @@
                                 </div>
                             </div>
 
-                                <div class="w3-center">
+                                <!--<div class="w3-center">
                                     @if (Route::has('password.request'))
                                         <a class="" href="{{ route('password.request') }}" style="color:purple;">
                                             {{ __('Forgot Your Password?') }}
@@ -72,7 +72,7 @@
                                         <a class="" href="{{ route('register') }}" style="font-size:100%;color:purple;">
                                             {{ __('New Admin? Register Now') }}
                                         </a>
-                                </div>
+                                </div>-->
 
                             <br />
                             <br />
