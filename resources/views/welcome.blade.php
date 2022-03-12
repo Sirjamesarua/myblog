@@ -3,6 +3,7 @@
 
     @php
         use App\Http\Controllers\PostsController;
+        use App\Http\Controllers\PagesController;
     @endphp
 
 
